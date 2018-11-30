@@ -257,7 +257,7 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
-const adminprefix = "1vip";
+const adminprefix = "$";
 const devs = ['460389855382470662'];
 client.on('message', message => {
   var argresult = message.content.split(` `).slice(1).join(' ');
