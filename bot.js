@@ -257,7 +257,7 @@ function isYoutube(str) {
       message.channel.send({embed});
      }
     });
-var adminprefix = "9"
+var adminprefix = "_"
 const developers = ["518049657926975492"]
 client.on('message', message => {
     var argresult = message.content.split(` `).slice(1).join(' ');
@@ -265,22 +265,22 @@ client.on('message', message => {
      
   if (message.content.startsWith(adminprefix + 'setg')) {
     client.user.setGame(argresult);
-      message.channel.send(`SAJED`   ${argresult}**`)
+      message.channel.send(`LastCodes   ${argresult}**`)
   } else
      if (message.content === (adminprefix + "leave")) {
     message.guild.leave();        
   } else  
   if (message.content.startsWith(adminprefix + 'setw')) {
   client.user.setActivity(argresult, {type:'WATCHING'});
-      message.channel.send(`SAJED`   ${argresult}**`)
+      message.channel.send(`LastCodes   ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'setl')) {
   client.user.setActivity(argresult , {type:'LISTENING'});
-      message.channel.send(`SAJED`   ${argresult}**`)
+      message.channel.send(`LastCodes   ${argresult}**`)
   } else
   if (message.content.startsWith(adminprefix + 'sets')) {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
-      message.channel.send(`SAJED`)
+      message.channel.send(`LastCodes`)
   }
   if (message.content.startsWith(adminprefix + 'setname')) {
   client.user.setUsername(argresult).then
