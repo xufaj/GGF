@@ -157,8 +157,8 @@ client.on('message', function(message) {
     else if (message.content.startsWith(prefix + 'vol')) {
         if (!message.member.voiceChannel) return message.channel.send(':no_entry: || **__يجب ان تكون في روم صوتي__**');
         // console.log(args)
-        if (args > 1000) return message.channel.send('1 - 1000 || **__لا أكثر ولا أقل__**')
-        if (args < 1) return message.channel.send('1 - 1000 || **__لا أكثر ولا أقل__**')
+        if (args > 500) return message.channel.send('1 - 500 || **__لا أكثر ولا أقل__**')
+        if (args < 1) return message.channel.send('1 - 500 || **__لا أكثر ولا أقل__**')
         dispatcher.setVolume(1 * args / 50);
         message.channel.sendMessage(`**__ ${dispatcher.volume*50}% مستوى الصوت __**`);
     }
@@ -288,7 +288,7 @@ function isYoutube(str) {
      مواصلة الأغنية
 	 
      **${prefix}vol** :
-     مستوى الصوت 1-100
+     مستوى الصوت 1-500
 	 
      **${prefix}end** :
      خروج البوت من الروم
