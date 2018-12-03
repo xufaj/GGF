@@ -1,5 +1,11 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+client.on('ready', () => {
+  client.user.setGame('*help | *invite','https://www.twitch.tv/One');
+  console.log('---------------');
+  console.log(' Bot Is Online')
+  console.log('---------------')
+});
 const ytdl = require('ytdl-core');
 const request = require('request');
 const fs = require('fs');
